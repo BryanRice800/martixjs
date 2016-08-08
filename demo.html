@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<style>
+			.matrix.fullScreen {
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+			}
+			.matrix-column {
+				float: left;
+				height: 100%;
+				word-wrap: break-word;
+				font-family: monospace;
+			}
+			.matrix-column span.bit {
+				float: left;
+				width: 100%;
+				text-align: center;
+			}
+			.matrix-column span {
+				color: #00ff2b;
+			}
+			.matrix-column span.bit:first-child {
+				font-weight: bold;
+				color: #333;
+			}
+			.matrix-column span.bit:last-child {
+				font-weight: bold;
+				color: #ddffaa;
+			}
+		</style>
+		<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+		<script src="matrixjs.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#thematrix').matrix({'probabilities' : {
+							'hiragana': 5,
+							'numbers': 35,
+							'letters': 95,
+							'kanjis':  100,
+						}});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div id="thematrix">
+		</div>
+	</body>
+</html>

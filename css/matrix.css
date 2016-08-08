@@ -1,0 +1,29 @@
+.matrix.fullScreen {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.matrix-column {
+	float: left;
+	height: 100%;
+	word-wrap: break-word;
+	font-family: monospace;
+}
+.matrix-column span.bit {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.matrix-column span {
+	color: #00ff2b;
+}
+.matrix-column span.bit:first-child {
+	font-weight: bold;
+	color: #333;
+}
+.matrix-column span.bit:last-child {
+	font-weight: bold;
+	color: #ddffaa;
+}
