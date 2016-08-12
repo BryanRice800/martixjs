@@ -270,8 +270,7 @@
 		getRandom : function(min, max) {
 			min = min || 0;
 			max = max || 100;
-			var range = (max - min) + 1;
-			return Math.floor((Math.random() * range), 0);
+			return Math.floor(Math.random() * ((max - min) + min));
 		}
 	}
 	$.fn.matrix = function(options) {
